@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SensorControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SensorControl_tb
