@@ -6,10 +6,9 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl.v" Line 1. Module SensorControl doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl.v" Line 1. Module SensorControl doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PWMController
 Compiling module xil_defaultlib.SensorControl
 Compiling module xil_defaultlib.SensorControl_tb
 Compiling module xil_defaultlib.glbl

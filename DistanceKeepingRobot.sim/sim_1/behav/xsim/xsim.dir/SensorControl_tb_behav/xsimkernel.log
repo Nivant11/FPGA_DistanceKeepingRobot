@@ -1,4 +1,0 @@
-Running: xsim.dir/SensorControl_tb_behav/xsimk.exe -simmode gui -wdb SensorControl_tb_behav.wdb -simrunnum 0 -socket 34030
-Design successfully loaded
-Design Loading Memory Usage: 7132 KB (Peak: 7132 KB)
-Design Loading CPU Usage: 93 ms

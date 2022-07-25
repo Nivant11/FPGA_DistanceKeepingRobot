@@ -5,7 +5,6 @@ module SensorControl_tb();
 
 reg CLK;
 wire integer DIST;
-wire integer PWM;
 wire TRIG;
 wire RESET;
 integer CLK_count = 0; //Currently only using this for RESET pulse
@@ -66,7 +65,7 @@ always @(DIST) begin
     end
 end
 
-assign RESET = (CLK_count < 5) ? 1'b1 : 1'b0;
+assign RESET = (CLK_count < 5) ? 1'b1 : 1'b0; //Assert a Reset for 5 clock cycles
 
 assign ECHO_LENGTH = (test_number == 1) ? 11662 :
                     (test_number == 2) ? 29155 : (test_number == 3) ? 40816 :

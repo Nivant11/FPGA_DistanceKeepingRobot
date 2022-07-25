@@ -70,4 +70,10 @@ if (EN == 1) begin
 end //Always block
 
 
+PWMController PWM_C(
+    .CLK(CLK),
+    .DIST(DIST),
+    .RESET(RESET)
+);
+
 endmodule
