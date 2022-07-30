@@ -3,7 +3,7 @@
 Oct 19 2021
 03:16:22
 D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
-D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/PWMController.v,1658721489,verilog,,D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/PWMController_tb.v,,PWMController,,,,,,,,
-D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/PWMController_tb.v,1658721449,verilog,,,,PWMController_tb,,,,,,,,
+D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/PWMController.v,1658804231,verilog,,D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/PWMController_tb.v,,PWMController,,,,,,,,
+D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/PWMController_tb.v,1658804716,verilog,,,,PWMController_tb,,,,,,,,
 D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl.v,1658700226,verilog,,D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl_tb.v,,SensorControl,,,,,,,,
 D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl_tb.v,1658712843,verilog,,,,SensorControl_tb,,,,,,,,
