@@ -28,6 +28,6 @@ module PWMController(
         else counter = counter + 1;
     end
     
-    assign PWM = (counter <= DutyCycle) ? 1'b1 : 1'b0;
+    assign PWM = (DutyCycle == 0) ? 1'b0 : (counter <= DutyCycle) ? 1'b1 : 1'b0;
     
 endmodule
