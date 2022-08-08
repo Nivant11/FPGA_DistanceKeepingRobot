@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/ControlLogic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlLogic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/PWMController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWMController
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/PWMController_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWMController_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SensorControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SensorControl_tb
+INFO: [VRFC 10-2458] undeclared symbol PWM, assumed default net type wire [D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/SensorControl_tb.v:82]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL Projects/DistanceKeepingRobot/DistanceKeepingRobot.srcs/sources_1/new/ControlLogic_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlLogic_tb

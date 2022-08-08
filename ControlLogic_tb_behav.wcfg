@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ControlLogic_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ControlLogic_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="60,817.300 ns"></ZoomStartTime>
+      <ZoomEndTime time="61,025.501 ns"></ZoomEndTime>
+      <Cursor1Time time="60,878.500 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="169"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/ControlLogic_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlLogic_tb/PWM" type="array">
+      <obj_property name="ElementShortName">PWM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">PWM[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlLogic_tb/PWM_master" type="logic">
+      <obj_property name="ElementShortName">PWM_master</obj_property>
+      <obj_property name="ObjectShortName">PWM_master</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlLogic_tb/Dir" type="array">
+      <obj_property name="ElementShortName">Dir[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Dir[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group13" type="group">
+      <obj_property name="label">DutyCycles</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ControlLogic_tb/DutyCycle3" type="array">
+         <obj_property name="ElementShortName">DutyCycle3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DutyCycle3[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ControlLogic_tb/DutyCycle2" type="array">
+         <obj_property name="ElementShortName">DutyCycle2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DutyCycle2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ControlLogic_tb/DutyCycle1" type="array">
+         <obj_property name="ElementShortName">DutyCycle1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DutyCycle1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ControlLogic_tb/DutyCycle0" type="array">
+         <obj_property name="ElementShortName">DutyCycle0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DutyCycle0[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
