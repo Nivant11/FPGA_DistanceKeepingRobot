@@ -18,16 +18,16 @@ module PWMController(
     
     
     //PID Control. If the Distance is greater than the threshold (i.e. the sensor has not been "tripped", the DutyCycle is zero
-    assign error = (DIST > 38) ? 0 : THRESHOLD - DIST;
-    assign pTerm = Kp * error;
-    assign i_DutyCycle = (error == 0) ? 0 : (pTerm > 100) ? 100 : pTerm; //Set the duty cycle and clamp it to a range of 0 to 100
-    assign DutyCycle = i_DutyCycle;
+    assign error = (RESET == 1'b1) ? 0 : (DIST > 38) ? 0 : THRESHOLD - DIST;
+    assign pTerm = (RESET == 1'b1) ? 0 : Kp * error;
+    assign i_DutyCycle = (RESET == 1'b1) ? 0 : (error == 0) ? 0 : (pTerm > 100) ? 100 : pTerm; //Set the duty cycle and clamp it to a range of 0 to 100
+    assign DutyCycle = (RESET == 1'b1) ? 0 : i_DutyCycle;
     
     always @(posedge CLK) begin
         if(counter == 100) counter = 0; 
         else counter = counter + 1;
     end
     
-    assign PWM = (DutyCycle == 0) ? 1'b0 : (counter <= DutyCycle) ? 1'b1 : 1'b0;
+    assign PWM = (RESET == 1'b1) ? 0 : (DutyCycle == 0) ? 1'b0 : (counter <= DutyCycle) ? 1'b1 : 1'b0;
     
 endmodule

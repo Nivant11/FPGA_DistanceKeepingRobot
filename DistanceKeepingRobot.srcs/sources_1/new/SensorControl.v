@@ -1,10 +1,9 @@
-module SensorControl(CLK, EN, DIST, PWM, TRIG, ECHO, RESET, State);
+module SensorControl(CLK, EN, DIST, TRIG, ECHO, RESET, State);
 input CLK;
 input RESET;
 input EN;
 input ECHO;
 output integer DIST;
-output wire integer PWM;
 output wire TRIG;
 output reg [2:0] State;
 
@@ -68,12 +67,5 @@ if (EN == 1) begin
     end//FSM
     end //Enable
 end //Always block
-
-
-PWMController PWM_C(
-    .CLK(CLK),
-    .DIST(DIST),
-    .RESET(RESET)
-);
 
 endmodule
