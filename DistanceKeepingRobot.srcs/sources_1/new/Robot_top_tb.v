@@ -25,10 +25,10 @@ reg ECHO0;
 reg ECHO1;
 reg ECHO2;
 reg ECHO3;
-integer ECHO_LENGTH0 = 29155;
-integer ECHO_LENGTH1 = 40816;
-integer ECHO_LENGTH2 = 58309;
-integer ECHO_LENGTH3 = 1166181;
+integer ECHO_LENGTH0 = 1166181;
+integer ECHO_LENGTH1 = 117618;
+integer ECHO_LENGTH2 = 116100;
+integer ECHO_LENGTH3 = 100000;
 integer ECHO_TIMER0;
 integer ECHO_TIMER1;
 integer ECHO_TIMER2;
@@ -67,7 +67,7 @@ always @(posedge CLK) begin
         if(TRIG2) begin s_TRIG2 = 1'b1; end
         if(TRIG3) begin s_TRIG3 = 1'b1; end
         if(s_TRIG0 == 1'b1 && s_TRIG1 == 1'b1 && s_TRIG2 == 1'b1 && s_TRIG3 == 1'b1) begin
-            #10000 test_State = SENDING_ECHO; //Wait 10 us to make sure all TRIGs have gone low
+             test_State = SENDING_ECHO; //Wait 10 us to make sure all TRIGs have gone low
         end
        end
        SENDING_ECHO: begin
@@ -112,7 +112,7 @@ always @(posedge CLK) begin
     
 end
 
-Robot_top uut(
+Robot_Top uut(
     .PWM_master(PWM_master),
     .ECHO0(ECHO0),
     .ECHO1(ECHO1),

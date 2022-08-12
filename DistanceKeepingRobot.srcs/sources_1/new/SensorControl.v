@@ -58,7 +58,8 @@ if (EN == 1) begin
                     ECHO_COUNT = ECHO_COUNT + 1;
                 end
                 else begin
-                    DIST = ((ECHO_COUNT * 0.00000001) * 34300) / 2;
+                    //May have to divide by 10 on this number (take one zero out of the decimal)
+                    DIST = ((ECHO_COUNT * 0.000000001) * 34300) / 2;
                     State = TRIGGER;
                 end
             end //COUNTING State
