@@ -2,7 +2,7 @@
 
 module Robot_Top(
     output PWM_master,
-    output [7:0] DIR_master,
+    output [7:0] DIR_master, //Contains direction signals for all motor controllers
     input CLK,
     input EN,
     input RESET,
@@ -25,6 +25,8 @@ module Robot_Top(
    wire [31:0] DutyCycle3;
    wire [1:0] DIR; //Final direction output by the control logic
    
+   assign DIR_master = (DIR == 2'b00) ? 8'b10101010 : (DIR == 2'b01) ? 8'b01010101 :
+            (DIR == 2'b10) ? 8'b01101001 : 8'b10010110;
    
    ControlLogic Logic(
     .PWM(PWM_set),
