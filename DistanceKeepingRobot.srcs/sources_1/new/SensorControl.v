@@ -19,7 +19,7 @@ localparam COUNTING = 3'b010; //This state will count the number of clock cycles
 
 integer TEN_US_CLK_COUNT = 0;
 reg ten_us;
-always @(posedge CLK or ECHO) begin
+always @(posedge CLK) begin
 if (EN == 1) begin
     if(TEN_US_CLK_COUNT == 1000) begin
         ten_us = 1'b1;
@@ -59,7 +59,7 @@ if (EN == 1) begin
                 end
                 else begin
                     //May have to divide by 10 on this number (take one zero out of the decimal)
-                    DIST = ((ECHO_COUNT * 0.000000001) * 34300) / 2;
+                    DIST = ((ECHO_COUNT / 1000000000) * 34300) / 2;
                     State = TRIGGER;
                 end
             end //COUNTING State

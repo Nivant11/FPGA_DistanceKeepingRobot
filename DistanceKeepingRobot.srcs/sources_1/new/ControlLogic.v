@@ -23,10 +23,10 @@ module ControlLogic(
               (DutyCycle3 >= DutyCycle0 && DutyCycle3 >= DutyCycle1 && DutyCycle3 >= DutyCycle2) ? PWM[3] : 1'bx;
    
     //Directions are set arbitrarily for now. This will have to be mapped out when the robot is actually built.
-    assign DIR = (DutyCycle0 >= DutyCycle1 && DutyCycle0 >= DutyCycle2 && DutyCycle0 >= DutyCycle3) ? FORWARD :
-              (DutyCycle1 >= DutyCycle0 && DutyCycle1 >= DutyCycle2 && DutyCycle1 >= DutyCycle3) ? BACK :
-              (DutyCycle2 >= DutyCycle0 && DutyCycle2 >= DutyCycle1 && DutyCycle2 >= DutyCycle3) ? RIGHT :
-              (DutyCycle3 >= DutyCycle0 && DutyCycle3 >= DutyCycle1 && DutyCycle3 >= DutyCycle2) ? LEFT : 2'bxx;
+    assign DIR = (DutyCycle2 >= DutyCycle1 && DutyCycle2 >= DutyCycle3 && DutyCycle2 >= DutyCycle0) ? FORWARD :
+              (DutyCycle0 >= DutyCycle1 && DutyCycle0 >= DutyCycle2 && DutyCycle0 >= DutyCycle3) ? BACK :
+              (DutyCycle3 >= DutyCycle0 && DutyCycle3 >= DutyCycle1 && DutyCycle3 >= DutyCycle2) ? RIGHT :
+              (DutyCycle1 >= DutyCycle0 && DutyCycle1 >= DutyCycle3 && DutyCycle1 >= DutyCycle2) ? LEFT : 2'bxx;
    
    
 endmodule

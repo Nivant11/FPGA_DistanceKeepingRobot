@@ -1,0 +1,1937 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Aug 21 01:34:09 2022
+| Host         : DESKTOP-URBAN13 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Robot_Top_timing_summary_routed.rpt -pb Robot_Top_timing_summary_routed.pb -rpx Robot_Top_timing_summary_routed.rpx -warn_on_violation
+| Design       : Robot_Top
+| Device       : 7s25-csga324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                               Violations  
+---------  --------  ----------------------------------------  ----------  
+TIMING-16  Warning   Large setup violation                     116         
+XDCH-2     Warning   Same min and max delay values on IO port  6           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+    -12.480     -626.474                    127                 1041        0.152        0.000                      0                 1041        4.500        0.000                       0                   457  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock    Waveform(ns)       Period(ns)      Frequency(MHz)
+-----    ------------       ----------      --------------
+ClkPort  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+ClkPort           -12.480     -626.474                    127                 1041        0.152        0.000                      0                 1041        4.500        0.000                       0                   457  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  ClkPort
+  To Clock:  ClkPort
+
+Setup :          127  Failing Endpoints,  Worst Slack      -12.480ns,  Total Violation     -626.474ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.152ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -12.480ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DIR_master[7]
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.751ns  (logic 7.158ns (40.325%)  route 10.593ns (59.675%))
+  Logic Levels:           17  (CARRY4=7 LUT3=2 LUT4=2 LUT5=2 LUT6=3 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 f  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      f  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 r  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         0.760    11.035    sc2/RESET
+    New           SLICE_X15Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_475/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.159 r  sc2/DIR_master_OBUF[7]_inst_i_475/O
+                                       net (fo=14, routed)          1.066    12.224    sc0/DutyCycle2[0]
+    New           SLICE_X5Y37                                                       r  sc0/DIR_master_OBUF[7]_inst_i_400/I4
+    New           SLICE_X5Y37          LUT6 (Prop_lut6_I4_O)        0.124    12.348 r  sc0/DIR_master_OBUF[7]_inst_i_400/O
+                                       net (fo=1, routed)           0.550    12.898    sc2/DI[0]
+    New           SLICE_X6Y36                                                       r  sc2/DIR_master_OBUF[7]_inst_i_250/DI[3]
+    New           SLICE_X6Y36          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                                    0.396    13.294 r  sc2/DIR_master_OBUF[7]_inst_i_250/CO[3]
+                                       net (fo=1, routed)           0.000    13.294    sc2/DIR_master_OBUF[7]_inst_i_250_n_0
+    New           SLICE_X6Y37                                                       r  sc2/DIR_master_OBUF[7]_inst_i_114/CI
+    New           SLICE_X6Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.411 r  sc2/DIR_master_OBUF[7]_inst_i_114/CO[3]
+                                       net (fo=1, routed)           0.000    13.411    sc2/DIR_master_OBUF[7]_inst_i_114_n_0
+    New           SLICE_X6Y38                                                       r  sc2/DIR_master_OBUF[7]_inst_i_30/CI
+    New           SLICE_X6Y38          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.528 r  sc2/DIR_master_OBUF[7]_inst_i_30/CO[3]
+                                       net (fo=1, routed)           0.000    13.528    sc2/DIR_master_OBUF[7]_inst_i_30_n_0
+    New           SLICE_X6Y39                                                       r  sc2/DIR_master_OBUF[7]_inst_i_6/CI
+    New           SLICE_X6Y39          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.229    13.757 r  sc2/DIR_master_OBUF[7]_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.713    14.470    Logic/PWM_master51_in
+    New           SLICE_X5Y41                                                       r  DIR_master_OBUF[7]_inst_i_2/I0
+    New           SLICE_X5Y41          LUT3 (Prop_lut3_I0_O)        0.310    14.780 r  DIR_master_OBUF[7]_inst_i_2/O
+                                       net (fo=5, routed)           1.476    16.256    Logic/DIR1
+    New           SLICE_X2Y24                                                       r  DIR_master_OBUF[7]_inst_i_1/I0
+    New           SLICE_X2Y24          LUT5 (Prop_lut5_I0_O)        0.124    16.380 r  DIR_master_OBUF[7]_inst_i_1/O
+                                       net (fo=2, routed)           2.350    18.729    DIR_master_OBUF[1]
+    New           U11                                                               r  DIR_master_OBUF[7]_inst/I
+    New           U11                  OBUF (Prop_obuf_I_O)         3.515    22.244 r  DIR_master_OBUF[7]_inst/O
+                                       net (fo=0)                   0.000    22.244    DIR_master[7]
+                  U11                                                               r  DIR_master[7] (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -22.244    
+  ---------------------------------------------------------------------------------
+                                       slack                                -12.480    
+
+Slack (VIOLATED) :        -12.389ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DIR_master[5]
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.660ns  (logic 7.151ns (40.495%)  route 10.508ns (59.505%))
+  Logic Levels:           17  (CARRY4=7 LUT3=2 LUT4=2 LUT5=1 LUT6=4 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 f  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      f  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 r  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         0.760    11.035    sc2/RESET
+    New           SLICE_X15Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_475/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.159 r  sc2/DIR_master_OBUF[7]_inst_i_475/O
+                                       net (fo=14, routed)          1.066    12.224    sc0/DutyCycle2[0]
+    New           SLICE_X5Y37                                                       r  sc0/DIR_master_OBUF[7]_inst_i_400/I4
+    New           SLICE_X5Y37          LUT6 (Prop_lut6_I4_O)        0.124    12.348 r  sc0/DIR_master_OBUF[7]_inst_i_400/O
+                                       net (fo=1, routed)           0.550    12.898    sc2/DI[0]
+    New           SLICE_X6Y36                                                       r  sc2/DIR_master_OBUF[7]_inst_i_250/DI[3]
+    New           SLICE_X6Y36          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                                    0.396    13.294 r  sc2/DIR_master_OBUF[7]_inst_i_250/CO[3]
+                                       net (fo=1, routed)           0.000    13.294    sc2/DIR_master_OBUF[7]_inst_i_250_n_0
+    New           SLICE_X6Y37                                                       r  sc2/DIR_master_OBUF[7]_inst_i_114/CI
+    New           SLICE_X6Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.411 r  sc2/DIR_master_OBUF[7]_inst_i_114/CO[3]
+                                       net (fo=1, routed)           0.000    13.411    sc2/DIR_master_OBUF[7]_inst_i_114_n_0
+    New           SLICE_X6Y38                                                       r  sc2/DIR_master_OBUF[7]_inst_i_30/CI
+    New           SLICE_X6Y38          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.528 r  sc2/DIR_master_OBUF[7]_inst_i_30/CO[3]
+                                       net (fo=1, routed)           0.000    13.528    sc2/DIR_master_OBUF[7]_inst_i_30_n_0
+    New           SLICE_X6Y39                                                       r  sc2/DIR_master_OBUF[7]_inst_i_6/CI
+    New           SLICE_X6Y39          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.229    13.757 r  sc2/DIR_master_OBUF[7]_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.713    14.470    Logic/PWM_master51_in
+    New           SLICE_X5Y41                                                       r  DIR_master_OBUF[7]_inst_i_2/I0
+    New           SLICE_X5Y41          LUT3 (Prop_lut3_I0_O)        0.310    14.780 r  DIR_master_OBUF[7]_inst_i_2/O
+                                       net (fo=5, routed)           1.550    16.330    Logic/DIR1
+    New           SLICE_X0Y21                                                       r  DIR_master_OBUF[5]_inst_i_1/I5
+    New           SLICE_X0Y21          LUT6 (Prop_lut6_I5_O)        0.124    16.454 r  DIR_master_OBUF[5]_inst_i_1/O
+                                       net (fo=2, routed)           2.191    18.645    DIR_master_OBUF[3]
+    New           R11                                                               r  DIR_master_OBUF[5]_inst/I
+    New           R11                  OBUF (Prop_obuf_I_O)         3.508    22.153 r  DIR_master_OBUF[5]_inst/O
+                                       net (fo=0)                   0.000    22.153    DIR_master[5]
+                  R11                                                               r  DIR_master[5] (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -22.153    
+  ---------------------------------------------------------------------------------
+                                       slack                                -12.389    
+
+Slack (VIOLATED) :        -12.376ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DIR_master[3]
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.647ns  (logic 7.159ns (40.569%)  route 10.488ns (59.431%))
+  Logic Levels:           17  (CARRY4=7 LUT3=2 LUT4=2 LUT5=1 LUT6=4 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 f  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      f  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 r  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         0.760    11.035    sc2/RESET
+    New           SLICE_X15Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_475/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.159 r  sc2/DIR_master_OBUF[7]_inst_i_475/O
+                                       net (fo=14, routed)          1.066    12.224    sc0/DutyCycle2[0]
+    New           SLICE_X5Y37                                                       r  sc0/DIR_master_OBUF[7]_inst_i_400/I4
+    New           SLICE_X5Y37          LUT6 (Prop_lut6_I4_O)        0.124    12.348 r  sc0/DIR_master_OBUF[7]_inst_i_400/O
+                                       net (fo=1, routed)           0.550    12.898    sc2/DI[0]
+    New           SLICE_X6Y36                                                       r  sc2/DIR_master_OBUF[7]_inst_i_250/DI[3]
+    New           SLICE_X6Y36          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                                    0.396    13.294 r  sc2/DIR_master_OBUF[7]_inst_i_250/CO[3]
+                                       net (fo=1, routed)           0.000    13.294    sc2/DIR_master_OBUF[7]_inst_i_250_n_0
+    New           SLICE_X6Y37                                                       r  sc2/DIR_master_OBUF[7]_inst_i_114/CI
+    New           SLICE_X6Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.411 r  sc2/DIR_master_OBUF[7]_inst_i_114/CO[3]
+                                       net (fo=1, routed)           0.000    13.411    sc2/DIR_master_OBUF[7]_inst_i_114_n_0
+    New           SLICE_X6Y38                                                       r  sc2/DIR_master_OBUF[7]_inst_i_30/CI
+    New           SLICE_X6Y38          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.528 r  sc2/DIR_master_OBUF[7]_inst_i_30/CO[3]
+                                       net (fo=1, routed)           0.000    13.528    sc2/DIR_master_OBUF[7]_inst_i_30_n_0
+    New           SLICE_X6Y39                                                       r  sc2/DIR_master_OBUF[7]_inst_i_6/CI
+    New           SLICE_X6Y39          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.229    13.757 r  sc2/DIR_master_OBUF[7]_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.713    14.470    Logic/PWM_master51_in
+    New           SLICE_X5Y41                                                       r  DIR_master_OBUF[7]_inst_i_2/I0
+    New           SLICE_X5Y41          LUT3 (Prop_lut3_I0_O)        0.310    14.780 r  DIR_master_OBUF[7]_inst_i_2/O
+                                       net (fo=5, routed)           1.550    16.330    Logic/DIR1
+    New           SLICE_X0Y21                                                       r  DIR_master_OBUF[5]_inst_i_1/I5
+    New           SLICE_X0Y21          LUT6 (Prop_lut6_I5_O)        0.124    16.454 r  DIR_master_OBUF[5]_inst_i_1/O
+                                       net (fo=2, routed)           2.170    18.624    DIR_master_OBUF[3]
+    New           T12                                                               r  DIR_master_OBUF[3]_inst/I
+    New           T12                  OBUF (Prop_obuf_I_O)         3.516    22.140 r  DIR_master_OBUF[3]_inst/O
+                                       net (fo=0)                   0.000    22.140    DIR_master[3]
+                  T12                                                               r  DIR_master[3] (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -22.140    
+  ---------------------------------------------------------------------------------
+                                       slack                                -12.376    
+
+Slack (VIOLATED) :        -12.359ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DIR_master[1]
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.630ns  (logic 7.174ns (40.689%)  route 10.457ns (59.311%))
+  Logic Levels:           17  (CARRY4=7 LUT3=2 LUT4=2 LUT5=2 LUT6=3 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 f  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      f  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 r  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         0.760    11.035    sc2/RESET
+    New           SLICE_X15Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_475/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.159 r  sc2/DIR_master_OBUF[7]_inst_i_475/O
+                                       net (fo=14, routed)          1.066    12.224    sc0/DutyCycle2[0]
+    New           SLICE_X5Y37                                                       r  sc0/DIR_master_OBUF[7]_inst_i_400/I4
+    New           SLICE_X5Y37          LUT6 (Prop_lut6_I4_O)        0.124    12.348 r  sc0/DIR_master_OBUF[7]_inst_i_400/O
+                                       net (fo=1, routed)           0.550    12.898    sc2/DI[0]
+    New           SLICE_X6Y36                                                       r  sc2/DIR_master_OBUF[7]_inst_i_250/DI[3]
+    New           SLICE_X6Y36          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                                    0.396    13.294 r  sc2/DIR_master_OBUF[7]_inst_i_250/CO[3]
+                                       net (fo=1, routed)           0.000    13.294    sc2/DIR_master_OBUF[7]_inst_i_250_n_0
+    New           SLICE_X6Y37                                                       r  sc2/DIR_master_OBUF[7]_inst_i_114/CI
+    New           SLICE_X6Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.411 r  sc2/DIR_master_OBUF[7]_inst_i_114/CO[3]
+                                       net (fo=1, routed)           0.000    13.411    sc2/DIR_master_OBUF[7]_inst_i_114_n_0
+    New           SLICE_X6Y38                                                       r  sc2/DIR_master_OBUF[7]_inst_i_30/CI
+    New           SLICE_X6Y38          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.528 r  sc2/DIR_master_OBUF[7]_inst_i_30/CO[3]
+                                       net (fo=1, routed)           0.000    13.528    sc2/DIR_master_OBUF[7]_inst_i_30_n_0
+    New           SLICE_X6Y39                                                       r  sc2/DIR_master_OBUF[7]_inst_i_6/CI
+    New           SLICE_X6Y39          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.229    13.757 r  sc2/DIR_master_OBUF[7]_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.713    14.470    Logic/PWM_master51_in
+    New           SLICE_X5Y41                                                       r  DIR_master_OBUF[7]_inst_i_2/I0
+    New           SLICE_X5Y41          LUT3 (Prop_lut3_I0_O)        0.310    14.780 r  DIR_master_OBUF[7]_inst_i_2/O
+                                       net (fo=5, routed)           1.476    16.256    Logic/DIR1
+    New           SLICE_X2Y24                                                       r  DIR_master_OBUF[7]_inst_i_1/I0
+    New           SLICE_X2Y24          LUT5 (Prop_lut5_I0_O)        0.124    16.380 r  DIR_master_OBUF[7]_inst_i_1/O
+                                       net (fo=2, routed)           2.214    18.593    DIR_master_OBUF[1]
+    New           U12                                                               r  DIR_master_OBUF[1]_inst/I
+    New           U12                  OBUF (Prop_obuf_I_O)         3.531    22.124 r  DIR_master_OBUF[1]_inst/O
+                                       net (fo=0)                   0.000    22.124    DIR_master[1]
+                  U12                                                               r  DIR_master[1] (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -22.124    
+  ---------------------------------------------------------------------------------
+                                       slack                                -12.359    
+
+Slack (VIOLATED) :        -12.350ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            PWM_master
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.621ns  (logic 7.563ns (42.919%)  route 10.058ns (57.081%))
+  Logic Levels:           18  (CARRY4=7 LUT3=2 LUT4=2 LUT5=1 LUT6=4 MUXF7=1 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 f  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      f  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 r  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         0.760    11.035    sc2/RESET
+    New           SLICE_X15Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_475/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.159 r  sc2/DIR_master_OBUF[7]_inst_i_475/O
+                                       net (fo=14, routed)          1.066    12.224    sc0/DutyCycle2[0]
+    New           SLICE_X5Y37                                                       r  sc0/DIR_master_OBUF[7]_inst_i_400/I4
+    New           SLICE_X5Y37          LUT6 (Prop_lut6_I4_O)        0.124    12.348 r  sc0/DIR_master_OBUF[7]_inst_i_400/O
+                                       net (fo=1, routed)           0.550    12.898    sc2/DI[0]
+    New           SLICE_X6Y36                                                       r  sc2/DIR_master_OBUF[7]_inst_i_250/DI[3]
+    New           SLICE_X6Y36          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                                    0.396    13.294 r  sc2/DIR_master_OBUF[7]_inst_i_250/CO[3]
+                                       net (fo=1, routed)           0.000    13.294    sc2/DIR_master_OBUF[7]_inst_i_250_n_0
+    New           SLICE_X6Y37                                                       r  sc2/DIR_master_OBUF[7]_inst_i_114/CI
+    New           SLICE_X6Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.411 r  sc2/DIR_master_OBUF[7]_inst_i_114/CO[3]
+                                       net (fo=1, routed)           0.000    13.411    sc2/DIR_master_OBUF[7]_inst_i_114_n_0
+    New           SLICE_X6Y38                                                       r  sc2/DIR_master_OBUF[7]_inst_i_30/CI
+    New           SLICE_X6Y38          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.528 r  sc2/DIR_master_OBUF[7]_inst_i_30/CO[3]
+                                       net (fo=1, routed)           0.000    13.528    sc2/DIR_master_OBUF[7]_inst_i_30_n_0
+    New           SLICE_X6Y39                                                       r  sc2/DIR_master_OBUF[7]_inst_i_6/CI
+    New           SLICE_X6Y39          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.229    13.757 r  sc2/DIR_master_OBUF[7]_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.713    14.470    Logic/PWM_master51_in
+    New           SLICE_X5Y41                                                       r  DIR_master_OBUF[7]_inst_i_2/I0
+    New           SLICE_X5Y41          LUT3 (Prop_lut3_I0_O)        0.310    14.780 r  DIR_master_OBUF[7]_inst_i_2/O
+                                       net (fo=5, routed)           1.378    16.158    sc1/DIR1
+    New           SLICE_X1Y63                                                       r  sc1/PWM_master_OBUF_inst_i_3/I4
+    New           SLICE_X1Y63          LUT6 (Prop_lut6_I4_O)        0.124    16.282 r  sc1/PWM_master_OBUF_inst_i_3/O
+                                       net (fo=1, routed)           0.000    16.282    sc1/PWM_master_OBUF_inst_i_3_n_0
+    New           SLICE_X1Y63                                                       r  sc1/PWM_master_OBUF_inst_i_1/I0
+    New           SLICE_X1Y63          MUXF7 (Prop_muxf7_I0_O)      0.238    16.520 r  sc1/PWM_master_OBUF_inst_i_1/O
+                                       net (fo=1, routed)           1.913    18.432    PWM_master_OBUF
+    New           G16                                                               r  PWM_master_OBUF_inst/I
+    New           G16                  OBUF (Prop_obuf_I_O)         3.682    22.114 r  PWM_master_OBUF_inst/O
+                                       net (fo=0)                   0.000    22.114    PWM_master
+                  G16                                                               r  PWM_master (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -22.114    
+  ---------------------------------------------------------------------------------
+                                       slack                                -12.350    
+
+Slack (VIOLATED) :        -12.071ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DIR_master[2]
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.342ns  (logic 7.183ns (41.419%)  route 10.159ns (58.581%))
+  Logic Levels:           16  (CARRY4=6 LUT3=2 LUT4=2 LUT5=1 LUT6=4 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 r  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 f  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         1.016    11.290    sc2/RESET
+    New           SLICE_X15Y37                                                      f  sc2/DIR_master_OBUF[7]_inst_i_378/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.414 f  sc2/DIR_master_OBUF[7]_inst_i_378/O
+                                       net (fo=14, routed)          1.257    12.671    sc0/DutyCycle2[3]
+    New           SLICE_X1Y35                                                       f  sc0/PWM_master_OBUF_inst_i_223/I5
+    New           SLICE_X1Y35          LUT6 (Prop_lut6_I5_O)        0.124    12.795 r  sc0/PWM_master_OBUF_inst_i_223/O
+                                       net (fo=1, routed)           0.324    13.119    sc2/PWM_master_OBUF_inst_i_25_0[0]
+    New           SLICE_X3Y36                                                       r  sc2/PWM_master_OBUF_inst_i_93/DI[0]
+    New           SLICE_X3Y36          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                                    0.526    13.645 r  sc2/PWM_master_OBUF_inst_i_93/CO[3]
+                                       net (fo=1, routed)           0.000    13.645    sc2/PWM_master_OBUF_inst_i_93_n_0
+    New           SLICE_X3Y37                                                       r  sc2/PWM_master_OBUF_inst_i_25/CI
+    New           SLICE_X3Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114    13.759 r  sc2/PWM_master_OBUF_inst_i_25/CO[3]
+                                       net (fo=1, routed)           0.000    13.759    sc2/PWM_master_OBUF_inst_i_25_n_0
+    New           SLICE_X3Y38                                                       r  sc2/PWM_master_OBUF_inst_i_6/CI
+    New           SLICE_X3Y38          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.228    13.987 r  sc2/PWM_master_OBUF_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.541    14.528    Logic/PWM_master34_in
+    New           SLICE_X1Y38                                                       r  PWM_master_OBUF_inst_i_2/I1
+    New           SLICE_X1Y38          LUT3 (Prop_lut3_I1_O)        0.313    14.841 r  PWM_master_OBUF_inst_i_2/O
+                                       net (fo=5, routed)           1.265    16.106    Logic/PWM_master1
+    New           SLICE_X0Y18                                                       r  DIR_master_OBUF[4]_inst_i_1/I4
+    New           SLICE_X0Y18          LUT6 (Prop_lut6_I4_O)        0.124    16.230 r  DIR_master_OBUF[4]_inst_i_1/O
+                                       net (fo=2, routed)           2.077    18.307    DIR_master_OBUF[2]
+    New           V13                                                               r  DIR_master_OBUF[2]_inst/I
+    New           V13                  OBUF (Prop_obuf_I_O)         3.528    21.835 r  DIR_master_OBUF[2]_inst/O
+                                       net (fo=0)                   0.000    21.835    DIR_master[2]
+                  V13                                                               r  DIR_master[2] (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -21.835    
+  ---------------------------------------------------------------------------------
+                                       slack                                -12.071    
+
+Slack (VIOLATED) :        -12.069ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DIR_master[4]
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.340ns  (logic 7.168ns (41.336%)  route 10.172ns (58.664%))
+  Logic Levels:           16  (CARRY4=6 LUT3=2 LUT4=2 LUT5=1 LUT6=4 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 r  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 f  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         1.016    11.290    sc2/RESET
+    New           SLICE_X15Y37                                                      f  sc2/DIR_master_OBUF[7]_inst_i_378/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.414 f  sc2/DIR_master_OBUF[7]_inst_i_378/O
+                                       net (fo=14, routed)          1.257    12.671    sc0/DutyCycle2[3]
+    New           SLICE_X1Y35                                                       f  sc0/PWM_master_OBUF_inst_i_223/I5
+    New           SLICE_X1Y35          LUT6 (Prop_lut6_I5_O)        0.124    12.795 r  sc0/PWM_master_OBUF_inst_i_223/O
+                                       net (fo=1, routed)           0.324    13.119    sc2/PWM_master_OBUF_inst_i_25_0[0]
+    New           SLICE_X3Y36                                                       r  sc2/PWM_master_OBUF_inst_i_93/DI[0]
+    New           SLICE_X3Y36          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                                    0.526    13.645 r  sc2/PWM_master_OBUF_inst_i_93/CO[3]
+                                       net (fo=1, routed)           0.000    13.645    sc2/PWM_master_OBUF_inst_i_93_n_0
+    New           SLICE_X3Y37                                                       r  sc2/PWM_master_OBUF_inst_i_25/CI
+    New           SLICE_X3Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114    13.759 r  sc2/PWM_master_OBUF_inst_i_25/CO[3]
+                                       net (fo=1, routed)           0.000    13.759    sc2/PWM_master_OBUF_inst_i_25_n_0
+    New           SLICE_X3Y38                                                       r  sc2/PWM_master_OBUF_inst_i_6/CI
+    New           SLICE_X3Y38          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.228    13.987 r  sc2/PWM_master_OBUF_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.541    14.528    Logic/PWM_master34_in
+    New           SLICE_X1Y38                                                       r  PWM_master_OBUF_inst_i_2/I1
+    New           SLICE_X1Y38          LUT3 (Prop_lut3_I1_O)        0.313    14.841 r  PWM_master_OBUF_inst_i_2/O
+                                       net (fo=5, routed)           1.265    16.106    Logic/PWM_master1
+    New           SLICE_X0Y18                                                       r  DIR_master_OBUF[4]_inst_i_1/I4
+    New           SLICE_X0Y18          LUT6 (Prop_lut6_I4_O)        0.124    16.230 r  DIR_master_OBUF[4]_inst_i_1/O
+                                       net (fo=2, routed)           2.091    18.321    DIR_master_OBUF[2]
+    New           T13                                                               r  DIR_master_OBUF[4]_inst/I
+    New           T13                  OBUF (Prop_obuf_I_O)         3.513    21.834 r  DIR_master_OBUF[4]_inst/O
+                                       net (fo=0)                   0.000    21.834    DIR_master[4]
+                  T13                                                               r  DIR_master[4] (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -21.834    
+  ---------------------------------------------------------------------------------
+                                       slack                                -12.069    
+
+Slack (VIOLATED) :        -11.959ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DIR_master[6]
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.230ns  (logic 7.150ns (41.496%)  route 10.080ns (58.504%))
+  Logic Levels:           17  (CARRY4=7 LUT3=2 LUT4=2 LUT5=2 LUT6=3 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 f  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      f  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 r  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         0.760    11.035    sc2/RESET
+    New           SLICE_X15Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_475/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.159 r  sc2/DIR_master_OBUF[7]_inst_i_475/O
+                                       net (fo=14, routed)          1.066    12.224    sc0/DutyCycle2[0]
+    New           SLICE_X5Y37                                                       r  sc0/DIR_master_OBUF[7]_inst_i_400/I4
+    New           SLICE_X5Y37          LUT6 (Prop_lut6_I4_O)        0.124    12.348 r  sc0/DIR_master_OBUF[7]_inst_i_400/O
+                                       net (fo=1, routed)           0.550    12.898    sc2/DI[0]
+    New           SLICE_X6Y36                                                       r  sc2/DIR_master_OBUF[7]_inst_i_250/DI[3]
+    New           SLICE_X6Y36          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                                    0.396    13.294 r  sc2/DIR_master_OBUF[7]_inst_i_250/CO[3]
+                                       net (fo=1, routed)           0.000    13.294    sc2/DIR_master_OBUF[7]_inst_i_250_n_0
+    New           SLICE_X6Y37                                                       r  sc2/DIR_master_OBUF[7]_inst_i_114/CI
+    New           SLICE_X6Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.411 r  sc2/DIR_master_OBUF[7]_inst_i_114/CO[3]
+                                       net (fo=1, routed)           0.000    13.411    sc2/DIR_master_OBUF[7]_inst_i_114_n_0
+    New           SLICE_X6Y38                                                       r  sc2/DIR_master_OBUF[7]_inst_i_30/CI
+    New           SLICE_X6Y38          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.528 r  sc2/DIR_master_OBUF[7]_inst_i_30/CO[3]
+                                       net (fo=1, routed)           0.000    13.528    sc2/DIR_master_OBUF[7]_inst_i_30_n_0
+    New           SLICE_X6Y39                                                       r  sc2/DIR_master_OBUF[7]_inst_i_6/CI
+    New           SLICE_X6Y39          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.229    13.757 f  sc2/DIR_master_OBUF[7]_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.713    14.470    Logic/PWM_master51_in
+    New           SLICE_X5Y41                                                       f  DIR_master_OBUF[7]_inst_i_2/I0
+    New           SLICE_X5Y41          LUT3 (Prop_lut3_I0_O)        0.310    14.780 f  DIR_master_OBUF[7]_inst_i_2/O
+                                       net (fo=5, routed)           1.156    15.936    Logic/DIR1
+    New           SLICE_X0Y21                                                       f  DIR_master_OBUF[6]_inst_i_1/I0
+    New           SLICE_X0Y21          LUT5 (Prop_lut5_I0_O)        0.124    16.060 r  DIR_master_OBUF[6]_inst_i_1/O
+                                       net (fo=2, routed)           2.157    18.217    DIR_master_OBUF[0]
+    New           T11                                                               r  DIR_master_OBUF[6]_inst/I
+    New           T11                  OBUF (Prop_obuf_I_O)         3.507    21.723 r  DIR_master_OBUF[6]_inst/O
+                                       net (fo=0)                   0.000    21.723    DIR_master[6]
+                  T11                                                               r  DIR_master[6] (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -21.723    
+  ---------------------------------------------------------------------------------
+                                       slack                                -11.959    
+
+Slack (VIOLATED) :        -11.772ns  (required time - arrival time)
+  Source:                 sc2/DIST_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            DIR_master[0]
+                            (output port clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        17.043ns  (logic 7.166ns (42.044%)  route 9.878ns (57.957%))
+  Logic Levels:           17  (CARRY4=7 LUT3=2 LUT4=2 LUT5=2 LUT6=3 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -4.494ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.494ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.556     4.494    sc2/CLK_IBUF_BUFG
+                  SLICE_X21Y33         FDRE                                         r  sc2/DIST_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X21Y33         FDRE (Prop_fdre_C_Q)         0.456     4.950 r  sc2/DIST_reg[13]/Q
+                                       net (fo=2, routed)           0.656     5.605    sc2/DIST2[13]
+    New           SLICE_X23Y32                                                      r  sc2/DIR_master_OBUF[7]_inst_i_397/I0
+    New           SLICE_X23Y32         LUT4 (Prop_lut4_I0_O)        0.124     5.729 r  sc2/DIR_master_OBUF[7]_inst_i_397/O
+                                       net (fo=2, routed)           0.447     6.176    sc2/DIR_master_OBUF[7]_inst_i_397_n_0
+    New           SLICE_X23Y34                                                      r  sc2/DIR_master_OBUF[7]_inst_i_244/I4
+    New           SLICE_X23Y34         LUT5 (Prop_lut5_I4_O)        0.124     6.300 r  sc2/DIR_master_OBUF[7]_inst_i_244/O
+                                       net (fo=3, routed)           0.606     6.906    sc2/DIR_master_OBUF[7]_inst_i_244_n_0
+    New           SLICE_X22Y35                                                      r  sc2/PWM_master_OBUF_inst_i_103/I2
+    New           SLICE_X22Y35         LUT6 (Prop_lut6_I2_O)        0.124     7.030 f  sc2/PWM_master_OBUF_inst_i_103/O
+                                       net (fo=104, routed)         1.041     8.071    sc2/DIST_reg[5]_2
+    New           SLICE_X17Y36                                                      f  sc2/DIR_master_OBUF[7]_inst_i_532/I1
+    New           SLICE_X17Y36         LUT4 (Prop_lut4_I1_O)        0.124     8.195 r  sc2/DIR_master_OBUF[7]_inst_i_532/O
+                                       net (fo=1, routed)           0.000     8.195    sc2/DIR_master_OBUF[7]_inst_i_532_n_0
+    New           SLICE_X17Y36                                                      r  sc2/DIR_master_OBUF[7]_inst_i_484/S[1]
+    New           SLICE_X17Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                                    0.550     8.745 r  sc2/DIR_master_OBUF[7]_inst_i_484/CO[3]
+                                       net (fo=1, routed)           0.000     8.745    sc2/DIR_master_OBUF[7]_inst_i_484_n_0
+    New           SLICE_X17Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_383/CI
+    New           SLICE_X17Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     8.859 r  sc2/DIR_master_OBUF[7]_inst_i_383/CO[3]
+                                       net (fo=1, routed)           0.000     8.859    sc2/DIR_master_OBUF[7]_inst_i_383_n_0
+    New           SLICE_X17Y38                                                      r  sc2/DIR_master_OBUF[7]_inst_i_233/CI
+    New           SLICE_X17Y38         CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157     9.016 f  sc2/DIR_master_OBUF[7]_inst_i_233/CO[1]
+                                       net (fo=28, routed)          0.929     9.945    sc2/PWMCtrl2/i_DutyCycle3
+    New           SLICE_X16Y38                                                      f  sc2/DIR_master_OBUF[7]_inst_i_107/I5
+    New           SLICE_X16Y38         LUT6 (Prop_lut6_I5_O)        0.329    10.274 r  sc2/DIR_master_OBUF[7]_inst_i_107/O
+                                       net (fo=168, routed)         0.760    11.035    sc2/RESET
+    New           SLICE_X15Y37                                                      r  sc2/DIR_master_OBUF[7]_inst_i_475/I0
+    New           SLICE_X15Y37         LUT3 (Prop_lut3_I0_O)        0.124    11.159 r  sc2/DIR_master_OBUF[7]_inst_i_475/O
+                                       net (fo=14, routed)          1.066    12.224    sc0/DutyCycle2[0]
+    New           SLICE_X5Y37                                                       r  sc0/DIR_master_OBUF[7]_inst_i_400/I4
+    New           SLICE_X5Y37          LUT6 (Prop_lut6_I4_O)        0.124    12.348 r  sc0/DIR_master_OBUF[7]_inst_i_400/O
+                                       net (fo=1, routed)           0.550    12.898    sc2/DI[0]
+    New           SLICE_X6Y36                                                       r  sc2/DIR_master_OBUF[7]_inst_i_250/DI[3]
+    New           SLICE_X6Y36          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                                    0.396    13.294 r  sc2/DIR_master_OBUF[7]_inst_i_250/CO[3]
+                                       net (fo=1, routed)           0.000    13.294    sc2/DIR_master_OBUF[7]_inst_i_250_n_0
+    New           SLICE_X6Y37                                                       r  sc2/DIR_master_OBUF[7]_inst_i_114/CI
+    New           SLICE_X6Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.411 r  sc2/DIR_master_OBUF[7]_inst_i_114/CO[3]
+                                       net (fo=1, routed)           0.000    13.411    sc2/DIR_master_OBUF[7]_inst_i_114_n_0
+    New           SLICE_X6Y38                                                       r  sc2/DIR_master_OBUF[7]_inst_i_30/CI
+    New           SLICE_X6Y38          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    13.528 r  sc2/DIR_master_OBUF[7]_inst_i_30/CO[3]
+                                       net (fo=1, routed)           0.000    13.528    sc2/DIR_master_OBUF[7]_inst_i_30_n_0
+    New           SLICE_X6Y39                                                       r  sc2/DIR_master_OBUF[7]_inst_i_6/CI
+    New           SLICE_X6Y39          CARRY4 (Prop_carry4_CI_CO[2])
+                                                                    0.229    13.757 f  sc2/DIR_master_OBUF[7]_inst_i_6/CO[2]
+                                       net (fo=1, routed)           0.713    14.470    Logic/PWM_master51_in
+    New           SLICE_X5Y41                                                       f  DIR_master_OBUF[7]_inst_i_2/I0
+    New           SLICE_X5Y41          LUT3 (Prop_lut3_I0_O)        0.310    14.780 f  DIR_master_OBUF[7]_inst_i_2/O
+                                       net (fo=5, routed)           1.156    15.936    Logic/DIR1
+    New           SLICE_X0Y21                                                       f  DIR_master_OBUF[6]_inst_i_1/I0
+    New           SLICE_X0Y21          LUT5 (Prop_lut5_I0_O)        0.124    16.060 r  DIR_master_OBUF[6]_inst_i_1/O
+                                       net (fo=2, routed)           1.954    18.014    DIR_master_OBUF[0]
+    New           V15                                                               r  DIR_master_OBUF[0]_inst/I
+    New           V15                  OBUF (Prop_obuf_I_O)         3.523    21.537 r  DIR_master_OBUF[0]_inst/O
+                                       net (fo=0)                   0.000    21.537    DIR_master[0]
+                  V15                                                               r  DIR_master[0] (OUT)
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                                       clock pessimism              0.000    10.000    
+                                       clock uncertainty           -0.035     9.965    
+                                       output delay                -0.200     9.765    
+  ---------------------------------------------------------------------------------
+                                       required time                          9.765    
+                                       arrival time                         -21.537    
+  ---------------------------------------------------------------------------------
+                                       slack                                -11.772    
+
+Slack (VIOLATED) :        -6.876ns  (required time - arrival time)
+  Source:                 sc3/ECHO_COUNT_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc3/DIST_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ClkPort rise@10.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        16.396ns  (logic 7.756ns (47.304%)  route 8.640ns (52.696%))
+  Logic Levels:           28  (CARRY4=21 LUT1=1 LUT3=1 LUT4=1 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.188ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.219ns = ( 14.219 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.563ns
+    Clock Pessimism Removal (CPR):    0.156ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.880     0.880 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.962     2.841    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     2.937 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.625     4.563    sc3/CLK_IBUF_BUFG
+                  SLICE_X5Y12          FDRE                                         r  sc3/ECHO_COUNT_reg[0]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X5Y12          FDRE (Prop_fdre_C_Q)         0.456     5.019 f  sc3/ECHO_COUNT_reg[0]/Q
+                                       net (fo=2, routed)           0.293     5.312    sc3/ECHO_COUNT_reg_n_0_[0]
+    New           SLICE_X7Y12                                                       f  sc3/ECHO_COUNT[0]_i_1__2/I0
+    New           SLICE_X7Y12          LUT1 (Prop_lut1_I0_O)        0.124     5.436 r  sc3/ECHO_COUNT[0]_i_1__2/O
+                                       net (fo=2, routed)           0.332     5.767    sc3/ECHO_COUNT[0]_i_1__2_n_0
+    New           SLICE_X5Y12                                                       r  sc3/DIST_reg[2]_i_105/CYINIT
+    New           SLICE_X5Y12          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                                    0.580     6.347 r  sc3/DIST_reg[2]_i_105/CO[3]
+                                       net (fo=1, routed)           0.000     6.347    sc3/DIST_reg[2]_i_105_n_0
+    New           SLICE_X5Y13                                                       r  sc3/DIST_reg[2]_i_100/CI
+    New           SLICE_X5Y13          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     6.461 r  sc3/DIST_reg[2]_i_100/CO[3]
+                                       net (fo=1, routed)           0.000     6.461    sc3/DIST_reg[2]_i_100_n_0
+    New           SLICE_X5Y14                                                       r  sc3/DIST_reg[2]_i_81/CI
+    New           SLICE_X5Y14          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     6.575 r  sc3/DIST_reg[2]_i_81/CO[3]
+                                       net (fo=1, routed)           0.000     6.575    sc3/DIST_reg[2]_i_81_n_0
+    New           SLICE_X5Y15                                                       r  sc3/DIST_reg[2]_i_64/CI
+    New           SLICE_X5Y15          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     6.689 r  sc3/DIST_reg[2]_i_64/CO[3]
+                                       net (fo=1, routed)           0.000     6.689    sc3/DIST_reg[2]_i_64_n_0
+    New           SLICE_X5Y16                                                       r  sc3/DIST_reg[2]_i_48/CI
+    New           SLICE_X5Y16          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     6.803 r  sc3/DIST_reg[2]_i_48/CO[3]
+                                       net (fo=1, routed)           0.000     6.803    sc3/DIST_reg[2]_i_48_n_0
+    New           SLICE_X5Y17                                                       r  sc3/DIST_reg[2]_i_28/CI
+    New           SLICE_X5Y17          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     6.917 r  sc3/DIST_reg[2]_i_28/CO[3]
+                                       net (fo=1, routed)           0.000     6.917    sc3/DIST_reg[2]_i_28_n_0
+    New           SLICE_X5Y18                                                       r  sc3/DIST_reg[2]_i_10/CI
+    New           SLICE_X5Y18          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114     7.031 r  sc3/DIST_reg[2]_i_10/CO[3]
+                                       net (fo=1, routed)           0.000     7.031    sc3/DIST_reg[2]_i_10_n_0
+    New           SLICE_X5Y19                                                       r  sc3/DIST_reg[2]_i_3__2/CI
+    New           SLICE_X5Y19          CARRY4 (Prop_carry4_CI_O[1])
+                                                                    0.334     7.365 f  sc3/DIST_reg[2]_i_3__2/O[1]
+                                       net (fo=63, routed)          1.301     8.667    sc3/DIST8[30]
+    New           SLICE_X7Y16                                                       f  sc3/DIST[2]_i_99__2/I0
+    New           SLICE_X7Y16          LUT3 (Prop_lut3_I0_O)        0.303     8.970 r  sc3/DIST[2]_i_99__2/O
+                                       net (fo=1, routed)           0.000     8.970    sc3/DIST[2]_i_99__2_n_0
+    New           SLICE_X7Y16                                                       r  sc3/DIST_reg[2]_i_77/S[0]
+    New           SLICE_X7Y16          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                                    0.532     9.502 r  sc3/DIST_reg[2]_i_77/CO[3]
+                                       net (fo=1, routed)           0.000     9.502    sc3/DIST_reg[2]_i_77_n_0
+    New           SLICE_X7Y17                                                       r  sc3/DIST_reg[2]_i_62/CI
+    New           SLICE_X7Y17          CARRY4 (Prop_carry4_CI_O[1])
+                                                                    0.334     9.836 r  sc3/DIST_reg[2]_i_62/O[1]
+                                       net (fo=2, routed)           0.453    10.288    sc3/DIST_reg[2]_i_62_n_6
+    New           SLICE_X7Y18                                                       r  sc3/DIST[2]_i_43__2/I0
+    New           SLICE_X7Y18          LUT4 (Prop_lut4_I0_O)        0.303    10.591 r  sc3/DIST[2]_i_43__2/O
+                                       net (fo=2, routed)           0.555    11.146    sc3/DIST[2]_i_43__2_n_0
+    New           SLICE_X6Y18                                                       r  sc3/DIST[2]_i_47__2/I0
+    New           SLICE_X6Y18          LUT5 (Prop_lut5_I0_O)        0.124    11.270 r  sc3/DIST[2]_i_47__2/O
+                                       net (fo=1, routed)           0.000    11.270    sc3/DIST[2]_i_47__2_n_0
+    New           SLICE_X6Y18                                                       r  sc3/DIST_reg[2]_i_19__2/S[0]
+    New           SLICE_X6Y18          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                                    0.513    11.783 r  sc3/DIST_reg[2]_i_19__2/CO[3]
+                                       net (fo=1, routed)           0.000    11.783    sc3/DIST_reg[2]_i_19__2_n_0
+    New           SLICE_X6Y19                                                       r  sc3/DIST_reg[2]_i_5__2/CI
+    New           SLICE_X6Y19          CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.117    11.900 r  sc3/DIST_reg[2]_i_5__2/CO[3]
+                                       net (fo=1, routed)           0.000    11.900    sc3/DIST_reg[2]_i_5__2_n_0
+    New           SLICE_X6Y20                                                       r  sc3/DIST_reg[2]_i_2__2/CI
+    New           SLICE_X6Y20          CARRY4 (Prop_carry4_CI_CO[1])
+                                                                    0.157    12.057 r  sc3/DIST_reg[2]_i_2__2/CO[1]
+                                       net (fo=44, routed)          1.461    13.518    sc3/DIST_reg[2]_i_2__2_n_2
+    New           SLICE_X12Y27                                                      r  sc3/DIST[9]_i_5/I5
+    New           SLICE_X12Y27         LUT6 (Prop_lut6_I5_O)        0.332    13.850 r  sc3/DIST[9]_i_5/O
+                                       net (fo=1, routed)           0.000    13.850    sc3/DIST[9]_i_5_n_0
+    New           SLICE_X12Y27                                                      r  sc3/DIST_reg[9]_i_2__2/S[1]
+    New           SLICE_X12Y27         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                                    0.578    14.428 r  sc3/DIST_reg[9]_i_2__2/O[2]
+                                       net (fo=3, routed)           1.139    15.567    sc3/DIST_reg[9]_i_2__2_n_5
+    New           SLICE_X16Y31                                                      r  sc3/DIST[6]_i_3__2/I5
+    New           SLICE_X16Y31         LUT6 (Prop_lut6_I5_O)        0.301    15.868 r  sc3/DIST[6]_i_3__2/O
+                                       net (fo=1, routed)           0.849    16.717    sc3/DIST[6]_i_3__2_n_0
+    New           SLICE_X15Y27                                                      r  sc3/DIST_reg[6]_i_1__2/DI[2]
+    New           SLICE_X15Y27         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                                    0.398    17.115 r  sc3/DIST_reg[6]_i_1__2/CO[3]
+                                       net (fo=1, routed)           0.000    17.115    sc3/DIST_reg[6]_i_1__2_n_0
+    New           SLICE_X15Y28                                                      r  sc3/DIST_reg[8]_i_1__2/CI
+    New           SLICE_X15Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114    17.229 r  sc3/DIST_reg[8]_i_1__2/CO[3]
+                                       net (fo=1, routed)           0.000    17.229    sc3/DIST_reg[8]_i_1__2_n_0
+    New           SLICE_X15Y29                                                      r  sc3/DIST_reg[17]_i_10__2/CI
+    New           SLICE_X15Y29         CARRY4 (Prop_carry4_CI_O[1])
+                                                                    0.334    17.563 r  sc3/DIST_reg[17]_i_10__2/O[1]
+                                       net (fo=3, routed)           0.797    18.360    sc3/DIST_reg[17]_i_10__2_n_6
+    New           SLICE_X13Y25                                                      r  sc3/DIST[13]_i_2__2/I5
+    New           SLICE_X13Y25         LUT6 (Prop_lut6_I5_O)        0.303    18.663 r  sc3/DIST[13]_i_2__2/O
+                                       net (fo=1, routed)           0.670    19.333    sc3/DIST[13]_i_2__2_n_0
+    New           SLICE_X13Y28                                                      r  sc3/DIST_reg[13]_i_1__2/DI[3]
+    New           SLICE_X13Y28         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                                    0.385    19.718 r  sc3/DIST_reg[13]_i_1__2/CO[3]
+                                       net (fo=1, routed)           0.000    19.718    sc3/DIST_reg[13]_i_1__2_n_0
+    New           SLICE_X13Y29                                                      r  sc3/DIST_reg[17]_i_1__2/CI
+    New           SLICE_X13Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114    19.832 r  sc3/DIST_reg[17]_i_1__2/CO[3]
+                                       net (fo=1, routed)           0.000    19.832    sc3/DIST_reg[17]_i_1__2_n_0
+    New           SLICE_X13Y30                                                      r  sc3/DIST_reg[21]_i_1__2/CI
+    New           SLICE_X13Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                                    0.114    19.946 r  sc3/DIST_reg[21]_i_1__2/CO[3]
+                                       net (fo=1, routed)           0.000    19.946    sc3/DIST_reg[21]_i_1__2_n_0
+    New           SLICE_X13Y31                                                      r  sc3/DIST_reg[25]_i_1__2/CI
+    New           SLICE_X13Y31         CARRY4 (Prop_carry4_CI_O[0])
+                                                                    0.222    20.168 r  sc3/DIST_reg[25]_i_1__2/O[0]
+                                       net (fo=1, routed)           0.790    20.959    sc3/DIST4[23]
+    New           SLICE_X17Y27         FDRE                                         r  sc3/DIST_reg[22]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)   10.000    10.000 r  
+                  R2                                                0.000    10.000 r  CLK (IN)
+                                       net (fo=0)                   0.000    10.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.839    10.839 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           1.859    12.698    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.789 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         1.429    14.219    sc3/CLK_IBUF_BUFG
+                  SLICE_X17Y27         FDRE                                         r  sc3/DIST_reg[22]/C
+                                       clock pessimism              0.156    14.375    
+                                       clock uncertainty           -0.035    14.339    
+                  SLICE_X17Y27         FDRE (Setup_fdre_C_D)       -0.256    14.083    sc3/DIST_reg[22]
+  ---------------------------------------------------------------------------------
+                                       required time                         14.083    
+                                       arrival time                         -20.959    
+  ---------------------------------------------------------------------------------
+                                       slack                                 -6.876    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.152ns  (arrival time - required time)
+  Source:                 sc1/State_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc1/State_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.285ns  (logic 0.186ns (65.209%)  route 0.099ns (34.791%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.935ns
+    Source Clock Delay      (SCD):    1.580ns
+    Clock Pessimism Removal (CPR):    0.341ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.580     1.580    sc1/CLK_IBUF_BUFG
+                  SLICE_X7Y21          FDRE                                         r  sc1/State_reg[1]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X7Y21          FDRE (Prop_fdre_C_Q)         0.141     1.721 r  sc1/State_reg[1]/Q
+                                       net (fo=6, routed)           0.099     1.821    sc1/State_reg_n_0_[1]
+    New           SLICE_X6Y21                                                       r  sc1/State[0]_i_1__0/I0
+    New           SLICE_X6Y21          LUT6 (Prop_lut6_I0_O)        0.045     1.866 r  sc1/State[0]_i_1__0/O
+                                       net (fo=1, routed)           0.000     1.866    sc1/State[0]_i_1__0_n_0
+    New           SLICE_X6Y21          FDRE                                         r  sc1/State_reg[0]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.848     1.935    sc1/CLK_IBUF_BUFG
+                  SLICE_X6Y21          FDRE                                         r  sc1/State_reg[0]/C
+                                       clock pessimism             -0.341     1.593    
+                  SLICE_X6Y21          FDRE (Hold_fdre_C_D)         0.120     1.713    sc1/State_reg[0]
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.713    
+                                       arrival time                           1.866    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.152    
+
+Slack (MET) :             0.202ns  (arrival time - required time)
+  Source:                 sc3/State_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc3/i_TRIG_reg/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.306ns  (logic 0.186ns (60.763%)  route 0.120ns (39.237%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.945ns
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.343ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.588     1.588    sc3/CLK_IBUF_BUFG
+                  SLICE_X1Y12          FDRE                                         r  sc3/State_reg[0]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X1Y12          FDRE (Prop_fdre_C_Q)         0.141     1.729 r  sc3/State_reg[0]/Q
+                                       net (fo=6, routed)           0.120     1.849    sc3/State_reg_n_0_[0]
+    New           SLICE_X0Y12                                                       r  sc3/i_TRIG_i_1__2/I2
+    New           SLICE_X0Y12          LUT6 (Prop_lut6_I2_O)        0.045     1.894 r  sc3/i_TRIG_i_1__2/O
+                                       net (fo=1, routed)           0.000     1.894    sc3/i_TRIG_i_1__2_n_0
+    New           SLICE_X0Y12          FDRE                                         r  sc3/i_TRIG_reg/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.858     1.945    sc3/CLK_IBUF_BUFG
+                  SLICE_X0Y12          FDRE                                         r  sc3/i_TRIG_reg/C
+                                       clock pessimism             -0.343     1.601    
+                  SLICE_X0Y12          FDRE (Hold_fdre_C_D)         0.091     1.692    sc3/i_TRIG_reg
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.692    
+                                       arrival time                           1.894    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.202    
+
+Slack (MET) :             0.216ns  (arrival time - required time)
+  Source:                 sc1/i_TRIG_reg/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc1/i_TRIG_reg/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.337ns  (logic 0.209ns (62.033%)  route 0.128ns (37.967%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.935ns
+    Source Clock Delay      (SCD):    1.580ns
+    Clock Pessimism Removal (CPR):    0.354ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.580     1.580    sc1/CLK_IBUF_BUFG
+                  SLICE_X6Y21          FDRE                                         r  sc1/i_TRIG_reg/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X6Y21          FDRE (Prop_fdre_C_Q)         0.164     1.744 r  sc1/i_TRIG_reg/Q
+                                       net (fo=2, routed)           0.128     1.872    sc1/TRIG1_OBUF
+    New           SLICE_X6Y21                                                       r  sc1/i_TRIG_i_1__0/I5
+    New           SLICE_X6Y21          LUT6 (Prop_lut6_I5_O)        0.045     1.917 r  sc1/i_TRIG_i_1__0/O
+                                       net (fo=1, routed)           0.000     1.917    sc1/i_TRIG_i_1__0_n_0
+    New           SLICE_X6Y21          FDRE                                         r  sc1/i_TRIG_reg/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.848     1.935    sc1/CLK_IBUF_BUFG
+                  SLICE_X6Y21          FDRE                                         r  sc1/i_TRIG_reg/C
+                                       clock pessimism             -0.354     1.580    
+                  SLICE_X6Y21          FDRE (Hold_fdre_C_D)         0.121     1.701    sc1/i_TRIG_reg
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.701    
+                                       arrival time                           1.917    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.216    
+
+Slack (MET) :             0.220ns  (arrival time - required time)
+  Source:                 sc1/State_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc1/State_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.324ns  (logic 0.209ns (64.464%)  route 0.115ns (35.536%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.935ns
+    Source Clock Delay      (SCD):    1.580ns
+    Clock Pessimism Removal (CPR):    0.341ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.580     1.580    sc1/CLK_IBUF_BUFG
+                  SLICE_X6Y21          FDRE                                         r  sc1/State_reg[0]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X6Y21          FDRE (Prop_fdre_C_Q)         0.164     1.744 r  sc1/State_reg[0]/Q
+                                       net (fo=6, routed)           0.115     1.859    sc1/State_reg_n_0_[0]
+    New           SLICE_X7Y21                                                       r  sc1/State[1]_i_1__0/I1
+    New           SLICE_X7Y21          LUT5 (Prop_lut5_I1_O)        0.045     1.904 r  sc1/State[1]_i_1__0/O
+                                       net (fo=1, routed)           0.000     1.904    sc1/State[1]_i_1__0_n_0
+    New           SLICE_X7Y21          FDRE                                         r  sc1/State_reg[1]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.848     1.935    sc1/CLK_IBUF_BUFG
+                  SLICE_X7Y21          FDRE                                         r  sc1/State_reg[1]/C
+                                       clock pessimism             -0.341     1.593    
+                  SLICE_X7Y21          FDRE (Hold_fdre_C_D)         0.091     1.684    sc1/State_reg[1]
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.684    
+                                       arrival time                           1.904    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.220    
+
+Slack (MET) :             0.240ns  (arrival time - required time)
+  Source:                 sc2/State_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc2/i_TRIG_reg/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.186ns (56.044%)  route 0.146ns (43.956%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.942ns
+    Source Clock Delay      (SCD):    1.586ns
+    Clock Pessimism Removal (CPR):    0.355ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.586     1.586    sc2/CLK_IBUF_BUFG
+                  SLICE_X7Y14          FDRE                                         r  sc2/State_reg[0]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X7Y14          FDRE (Prop_fdre_C_Q)         0.141     1.727 r  sc2/State_reg[0]/Q
+                                       net (fo=6, routed)           0.146     1.873    sc2/State_reg_n_0_[0]
+    New           SLICE_X7Y14                                                       r  sc2/i_TRIG_i_1__1/I1
+    New           SLICE_X7Y14          LUT6 (Prop_lut6_I1_O)        0.045     1.918 r  sc2/i_TRIG_i_1__1/O
+                                       net (fo=1, routed)           0.000     1.918    sc2/i_TRIG_i_1__1_n_0
+    New           SLICE_X7Y14          FDRE                                         r  sc2/i_TRIG_reg/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.855     1.942    sc2/CLK_IBUF_BUFG
+                  SLICE_X7Y14          FDRE                                         r  sc2/i_TRIG_reg/C
+                                       clock pessimism             -0.355     1.586    
+                  SLICE_X7Y14          FDRE (Hold_fdre_C_D)         0.092     1.678    sc2/i_TRIG_reg
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.678    
+                                       arrival time                           1.918    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.240    
+
+Slack (MET) :             0.250ns  (arrival time - required time)
+  Source:                 sc3/State_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc3/State_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.342ns  (logic 0.186ns (54.337%)  route 0.156ns (45.663%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.945ns
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.356ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.588     1.588    sc3/CLK_IBUF_BUFG
+                  SLICE_X1Y12          FDRE                                         r  sc3/State_reg[1]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X1Y12          FDRE (Prop_fdre_C_Q)         0.141     1.729 r  sc3/State_reg[1]/Q
+                                       net (fo=6, routed)           0.156     1.886    sc3/State_reg_n_0_[1]
+    New           SLICE_X1Y12                                                       r  sc3/State[1]_i_1__2/I1
+    New           SLICE_X1Y12          LUT5 (Prop_lut5_I1_O)        0.045     1.931 r  sc3/State[1]_i_1__2/O
+                                       net (fo=1, routed)           0.000     1.931    sc3/State[1]_i_1__2_n_0
+    New           SLICE_X1Y12          FDRE                                         r  sc3/State_reg[1]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.858     1.945    sc3/CLK_IBUF_BUFG
+                  SLICE_X1Y12          FDRE                                         r  sc3/State_reg[1]/C
+                                       clock pessimism             -0.356     1.588    
+                  SLICE_X1Y12          FDRE (Hold_fdre_C_D)         0.092     1.680    sc3/State_reg[1]
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.680    
+                                       arrival time                           1.931    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.250    
+
+Slack (MET) :             0.252ns  (arrival time - required time)
+  Source:                 sc3/State_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc3/State_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.343ns  (logic 0.186ns (54.179%)  route 0.157ns (45.821%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.945ns
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.356ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.588     1.588    sc3/CLK_IBUF_BUFG
+                  SLICE_X1Y12          FDRE                                         r  sc3/State_reg[1]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X1Y12          FDRE (Prop_fdre_C_Q)         0.141     1.729 r  sc3/State_reg[1]/Q
+                                       net (fo=6, routed)           0.157     1.887    sc3/State_reg_n_0_[1]
+    New           SLICE_X1Y12                                                       r  sc3/State[0]_i_1__2/I1
+    New           SLICE_X1Y12          LUT6 (Prop_lut6_I1_O)        0.045     1.932 r  sc3/State[0]_i_1__2/O
+                                       net (fo=1, routed)           0.000     1.932    sc3/State[0]_i_1__2_n_0
+    New           SLICE_X1Y12          FDRE                                         r  sc3/State_reg[0]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.858     1.945    sc3/CLK_IBUF_BUFG
+                  SLICE_X1Y12          FDRE                                         r  sc3/State_reg[0]/C
+                                       clock pessimism             -0.356     1.588    
+                  SLICE_X1Y12          FDRE (Hold_fdre_C_D)         0.091     1.679    sc3/State_reg[0]
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.679    
+                                       arrival time                           1.932    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.252    
+
+Slack (MET) :             0.262ns  (arrival time - required time)
+  Source:                 sc0/ECHO_COUNT_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc0/ECHO_COUNT_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.367ns  (logic 0.249ns (67.838%)  route 0.118ns (32.162%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.940ns
+    Source Clock Delay      (SCD):    1.584ns
+    Clock Pessimism Removal (CPR):    0.355ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.584     1.584    sc0/CLK_IBUF_BUFG
+                  SLICE_X1Y18          FDRE                                         r  sc0/ECHO_COUNT_reg[12]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X1Y18          FDRE (Prop_fdre_C_Q)         0.141     1.725 r  sc0/ECHO_COUNT_reg[12]/Q
+                                       net (fo=3, routed)           0.118     1.843    sc0/ECHO_COUNT_reg_n_0_[12]
+    New           SLICE_X1Y18                                                       r  sc0/ECHO_COUNT_reg[12]_i_1/S[3]
+    New           SLICE_X1Y18          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                                    0.108     1.951 r  sc0/ECHO_COUNT_reg[12]_i_1/O[3]
+                                       net (fo=1, routed)           0.000     1.951    sc0/ECHO_COUNT0[12]
+    New           SLICE_X1Y18          FDRE                                         r  sc0/ECHO_COUNT_reg[12]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.853     1.940    sc0/CLK_IBUF_BUFG
+                  SLICE_X1Y18          FDRE                                         r  sc0/ECHO_COUNT_reg[12]/C
+                                       clock pessimism             -0.355     1.584    
+                  SLICE_X1Y18          FDRE (Hold_fdre_C_D)         0.105     1.689    sc0/ECHO_COUNT_reg[12]
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.689    
+                                       arrival time                           1.951    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.262    
+
+Slack (MET) :             0.262ns  (arrival time - required time)
+  Source:                 sc0/ECHO_COUNT_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc0/ECHO_COUNT_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.367ns  (logic 0.249ns (67.838%)  route 0.118ns (32.162%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.939ns
+    Source Clock Delay      (SCD):    1.583ns
+    Clock Pessimism Removal (CPR):    0.355ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.583     1.583    sc0/CLK_IBUF_BUFG
+                  SLICE_X1Y19          FDRE                                         r  sc0/ECHO_COUNT_reg[16]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X1Y19          FDRE (Prop_fdre_C_Q)         0.141     1.724 r  sc0/ECHO_COUNT_reg[16]/Q
+                                       net (fo=4, routed)           0.118     1.842    sc0/ECHO_COUNT_reg_n_0_[16]
+    New           SLICE_X1Y19                                                       r  sc0/ECHO_COUNT_reg[16]_i_1/S[3]
+    New           SLICE_X1Y19          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                                    0.108     1.950 r  sc0/ECHO_COUNT_reg[16]_i_1/O[3]
+                                       net (fo=1, routed)           0.000     1.950    sc0/ECHO_COUNT0[16]
+    New           SLICE_X1Y19          FDRE                                         r  sc0/ECHO_COUNT_reg[16]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.852     1.939    sc0/CLK_IBUF_BUFG
+                  SLICE_X1Y19          FDRE                                         r  sc0/ECHO_COUNT_reg[16]/C
+                                       clock pessimism             -0.355     1.583    
+                  SLICE_X1Y19          FDRE (Hold_fdre_C_D)         0.105     1.688    sc0/ECHO_COUNT_reg[16]
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.688    
+                                       arrival time                           1.950    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.262    
+
+Slack (MET) :             0.262ns  (arrival time - required time)
+  Source:                 sc0/ECHO_COUNT_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sc0/ECHO_COUNT_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by ClkPort  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ClkPort
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ClkPort rise@0.000ns - ClkPort rise@0.000ns)
+  Data Path Delay:        0.367ns  (logic 0.249ns (67.838%)  route 0.118ns (32.162%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.941ns
+    Source Clock Delay      (SCD):    1.585ns
+    Clock Pessimism Removal (CPR):    0.355ns
+
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.345     0.345 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.630     0.975    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.001 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.585     1.585    sc0/CLK_IBUF_BUFG
+                  SLICE_X1Y17          FDRE                                         r  sc0/ECHO_COUNT_reg[8]/C
+  ---------------------------------------------------------------------------------    -------------------
+    New           SLICE_X1Y17          FDRE (Prop_fdre_C_Q)         0.141     1.726 r  sc0/ECHO_COUNT_reg[8]/Q
+                                       net (fo=2, routed)           0.118     1.844    sc0/ECHO_COUNT_reg_n_0_[8]
+    New           SLICE_X1Y17                                                       r  sc0/ECHO_COUNT_reg[8]_i_1/S[3]
+    New           SLICE_X1Y17          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                                    0.108     1.952 r  sc0/ECHO_COUNT_reg[8]_i_1/O[3]
+                                       net (fo=1, routed)           0.000     1.952    sc0/ECHO_COUNT0[8]
+    New           SLICE_X1Y17          FDRE                                         r  sc0/ECHO_COUNT_reg[8]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock ClkPort rise edge)    0.000     0.000 r  
+                  R2                                                0.000     0.000 r  CLK (IN)
+                                       net (fo=0)                   0.000     0.000    CLK
+                  R2                                                                r  CLK_IBUF_inst/I
+                  R2                   IBUF (Prop_ibuf_I_O)         0.375     0.375 r  CLK_IBUF_inst/O
+                                       net (fo=1, routed)           0.683     1.058    CLK_IBUF
+                  BUFGCTRL_X0Y0                                                     r  CLK_IBUF_BUFG_inst/I
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.087 r  CLK_IBUF_BUFG_inst/O
+                                       net (fo=456, routed)         0.854     1.941    sc0/CLK_IBUF_BUFG
+                  SLICE_X1Y17          FDRE                                         r  sc0/ECHO_COUNT_reg[8]/C
+                                       clock pessimism             -0.355     1.585    
+                  SLICE_X1Y17          FDRE (Hold_fdre_C_D)         0.105     1.690    sc0/ECHO_COUNT_reg[8]
+  ---------------------------------------------------------------------------------
+                                       required time                         -1.690    
+                                       arrival time                           1.952    
+  ---------------------------------------------------------------------------------
+                                       slack                                  0.262    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         ClkPort
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { CLK }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  CLK_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X7Y26    PWMCtrl0/counter_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X6Y27    PWMCtrl0/counter_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X6Y27    PWMCtrl0/counter_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X6Y27    PWMCtrl0/counter_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X6Y28    PWMCtrl0/counter_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X6Y28    PWMCtrl0/counter_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X6Y28    PWMCtrl0/counter_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X6Y28    PWMCtrl0/counter_reg[16]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X6Y25    PWMCtrl0/counter_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X7Y26    PWMCtrl0/counter_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X7Y26    PWMCtrl0/counter_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[10]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[10]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[11]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[11]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[12]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[12]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y28    PWMCtrl0/counter_reg[13]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y28    PWMCtrl0/counter_reg[13]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X7Y26    PWMCtrl0/counter_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X7Y26    PWMCtrl0/counter_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[10]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[11]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[12]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y27    PWMCtrl0/counter_reg[12]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y28    PWMCtrl0/counter_reg[13]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y28    PWMCtrl0/counter_reg[13]/C
+
+
+

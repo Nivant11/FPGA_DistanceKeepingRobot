@@ -1,0 +1,11 @@
++==============+===============+=====================+
+| Launch Clock | Capture Clock | Pin                 |
++==============+===============+=====================+
+| ClkPort      | ClkPort       | sc1/DIST_reg[27]/CE |
+| ClkPort      | ClkPort       | sc1/DIST_reg[28]/CE |
+| ClkPort      | ClkPort       | sc1/DIST_reg[29]/CE |
+| ClkPort      | ClkPort       | sc1/DIST_reg[26]/CE |
+| ClkPort      | ClkPort       | sc1/DIST_reg[12]/CE |
+| ClkPort      | ClkPort       | sc1/DIST_reg[15]/CE |
+| ClkPort      | ClkPort       | sc1/DIST_reg[10]/CE |
++--------------+---------------+---------------------+
